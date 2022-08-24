@@ -1,0 +1,7 @@
+export const baking: {projects: {name: string, description: string}[], image: string} = {
+  image: "www.cookiepicture.com",
+  projects: [
+    {name: "cookies", description: "chocolate chip"},
+    {name: "dinner rolls", description: "all done malcom buns"}
+  ]
+}
