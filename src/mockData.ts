@@ -36,6 +36,7 @@ export const baking: {
   ]
 }
 
+
 export const boardGames: {
   image?: string,
   id: number,
