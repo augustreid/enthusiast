@@ -1,17 +1,19 @@
-export const baking: {
-  image?: string, 
-  id: number,
-  projects:
-    {
+export const hobbies:
+  {
+    name: string,
+    image?: string, 
     id: number,
-    hobbyId: number,
-    title: string,
-    description: string,
-    supplies ?: string[],
-    resources ?: string[],
-    notes ?: string
-}[]
-} =  {
+    projects: {
+         id: number,
+         hobbyId: number,
+         title: string,
+         description: string,
+         supplies?: string[],
+         resources?: string[],
+         notes?: string
+       }[]
+}[] = [{
+  name: "Baking",
   image: "www.cookiepicture.com",
   id: 1,
   projects: [
@@ -34,23 +36,9 @@ export const baking: {
       notes: "this impresses everyone and feels like a real original"
     }
   ]
-}
-
-
-export const boardGames: {
-  image?: string,
-  id: number,
-  projects:
-  {
-    id: number,
-    hobbyId: number,
-    title: string,
-    description: string,
-    supplies?: string[],
-    resources?: string[],
-    notes?: string
-  }[]
-} = {
+},
+{
+  name: "Board Games",
   image: "www.hardgermangame.com",
   id: 2,
   projects: [
@@ -74,4 +62,5 @@ export const boardGames: {
     }
   ]
 }
+]
 
