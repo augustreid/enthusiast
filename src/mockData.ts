@@ -2,8 +2,8 @@ export const hobbies:
   {
     name: string,
     image?: string, 
-    id: number,
-    projects: {
+    id?: number,
+    projects?: {
          id: number,
          hobbyId: number,
          title: string,
