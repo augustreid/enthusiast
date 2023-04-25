@@ -11,6 +11,8 @@ function AddHobby() {
   function handleSubmit(e: any) {
     e.preventDefault();
     hobbies.push(newHobby);
+    setHobbyName("");
+    setImageUrl("");
     console.log(hobbies);
   }
 
