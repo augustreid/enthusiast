@@ -5,7 +5,7 @@ function HobbyNav() {
     <nav>
       {hobbies.map((hobby) => {
         return (
-          <h3>{hobby.name}</h3>
+          <h3 key={hobby.id}>{hobby.name}</h3>
         )
       })}
     </nav>

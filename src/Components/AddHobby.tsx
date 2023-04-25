@@ -4,12 +4,12 @@ function AddHobby() {
 
   const [hobbyName, setHobbyName] = useState(""); 
   const [imageUrl, setImageUrl] = useState("");
-  
+
   return(
     <form>
-      <input name="hobbyName">New Hobby</input>
-      <input name="imageUrl">Image URL</input>
-      <button type="submit">Add New Hobby</button>
+      <input name="hobbyName" value={hobbyName} onChange={(e) => setHobbyName(e.target.value)}/>
+      <input name="imageUrl" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)}/>
+      <button type="submit" onClick={(e) => setHobbyName("")}>Add New Hobby</button>
     </form>
   )
 }
